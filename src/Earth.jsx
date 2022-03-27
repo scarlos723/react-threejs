@@ -116,7 +116,7 @@ init(){
 
   const initialPoints = this.calcPoints()
 
-  const boxGeometry = new THREE.BoxGeometry( 0, 0, 0 );
+  const boxGeometry = new THREE.BoxGeometry( 0, 0, 0);
   const boxMaterial = new THREE.MeshBasicMaterial();
 
   for ( const handlePos of initialPoints ) {
@@ -136,8 +136,8 @@ init(){
   const points = curve.getPoints( 50 );
   const line = new THREE.LineLoop(
     new THREE.BufferGeometry().setFromPoints( points ),
-      new THREE.LineBasicMaterial( { transparent: true,
-        opacity: 0 } )
+      new THREE.LineBasicMaterial({ transparent: true,
+        opacity: 1 })
   );
 
   scene.add( line );
@@ -162,13 +162,16 @@ init(){
   const loader = new FontLoader();
 
   const text = 'Puto el que lo lea XD'
-  loader.load( './fonts/helvetiker_regular.typeface.json', function (font) {
 
-    const geometry = new TextGeometry( text, {
+  const colorFonts = 0xbdbdbd
+  const textFilm = 'The motion picture cryptocurrency of choice'
+  loader.load( './fonts/Federation_Bold.json', function (font) {
+
+    const geometry = new TextGeometry( textFilm, {
       font: font,
       size: 0.13,
       height: 0.01,
-      curveSegments: 16,
+      curveSegments: 20,
       bevelEnabled: true,
       bevelThickness: 0.02,
       bevelSize: 0.008,
@@ -180,7 +183,7 @@ init(){
     geometry.rotateY( Math.PI );
 
     const material = new THREE.MeshStandardMaterial( {
-      color: 0xDB8824, 
+      color: colorFonts, 
       roughness:0,
       fog:true,
       envMap:'bricks'
@@ -210,7 +213,7 @@ init(){
 // animation
 animate(){
   requestAnimationFrame(this.animate);
-  sphere.rotation.y -= 0.0035;
+  //sphere.rotation.y -= 0.0035;
   renderer.render(scene, camera);
   
   if ( flow ) {

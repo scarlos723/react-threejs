@@ -1,7 +1,9 @@
 import React from "react"
 import './App.css'
 import Earth from "./Earth"
+import Earth3 from "./Earth3"
 import Sphere from "./Sphere"
+import SphereHdr from "./SphereHdr"
 const App = ()=>{
   
   return(
@@ -13,7 +15,7 @@ const App = ()=>{
           </p>
         </div>
         <div> 
-          <Sphere />
+          <SphereHdr/>
         </div>
         
       </div>
