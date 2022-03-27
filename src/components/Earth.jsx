@@ -2,15 +2,15 @@ import { Component } from 'react';
 import * as THREE from 'three';
 import { AlwaysDepth, MeshBasicMaterial } from 'three';
 //import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js'
-import mapTexture from './images/world_topo_nasa.jpg'
+import mapTexture from '../images/world_topo_nasa.jpg'
 import { FontLoader } from 'three/examples/jsm/loaders/FontLoader.js';
 import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js';
 import { Flow } from 'three/examples/jsm/modifiers/CurveModifier.js';
 import { FlakesTexture } from 'three/examples/jsm/textures/FlakesTexture';
 import { RGBELoader } from 'three/examples/jsm/loaders/RGBELoader';
-import logoFC from './images/FCTextLogo.png'
-import OrbitLetters from './images/OrbitLetters.png'
-import { sRGBEncoding } from 'three';
+import logoFC from '../images/FCTextLogo.png'
+import OrbitLetters from '../images/OrbitLetters.png'
+import { sRGBEncoding } from'three';
 //import {RGBELoader} from 'three/examples/jsm/loaders/RGBELoader.js'
 //import {FlakesTexture} from 'three/examples/jsm/textures/FlakesTexture.js'
 let scene,camera,renderer,sphere, flow //, controls

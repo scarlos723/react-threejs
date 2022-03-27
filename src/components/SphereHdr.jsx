@@ -1,12 +1,11 @@
 import { Component } from 'react';
 import * as THREE from 'three';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js'
-import  imgTierra from './images/world_topo_nasa.jpg'
+
 import { FlakesTexture } from 'three/examples/jsm/textures/FlakesTexture';
 import { RGBELoader } from 'three/examples/jsm/loaders/RGBELoader';
-import OrbitLetters from './images/OrbitLetters.png'
-import vertexShader from './shaders/vertex.glsl'
-import fragmentShader from './shaders/fragment.glsl'
+import OrbitLetters from '../images/OrbitLetters.png'
+import  imgTierra from '../images/world_topo_nasa.jpg'
 
 let scene,camera,renderer, controls, sphere, ribbon
 const curveHandles = [];

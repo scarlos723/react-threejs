@@ -1,9 +1,9 @@
 import React from "react"
 import './App.css'
-import Earth from "./Earth"
-import Earth3 from "./Earth3"
-import Sphere from "./Sphere"
-import SphereHdr from "./SphereHdr"
+import Earth from "./components/Earth"
+import Earth3 from "./components/Earth3"
+import Sphere from "./components/Sphere"
+import SphereHdr from "./components/SphereHdr"
 const App = ()=>{
   
   return(
