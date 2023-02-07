@@ -86,23 +86,23 @@ class SphereHdr extends Component{
       scene.add(sphere);
       
 
-      const ribbonCurve = {
-        geometry: new THREE.SphereBufferGeometry(1.5, 32, 32),
-        material: new THREE.MeshPhongMaterial({
-          roughness: 1,
-          metalness: 1,
-          transparent: 1,
-          map: new THREE.TextureLoader().load(OrbitLetters),
+      // const ribbonCurve = {
+      //   geometry: new THREE.SphereBufferGeometry(1.5, 32, 32),
+      //   material: new THREE.MeshPhongMaterial({
+      //     roughness: 1,
+      //     metalness: 1,
+      //     transparent: 1,
+      //     map: new THREE.TextureLoader().load(OrbitLetters),
   
-          //side: THREE.DoubleSide,
+      //     //side: THREE.DoubleSide,
         
-          depthTest: false
-        })
-        }
-        // add mesh
-        ribbon = new THREE.Mesh(ribbonCurve.geometry, ribbonCurve.material)
-        ribbon.position.set(0, 0, 0)
-        scene.add(ribbon)
+      //     depthTest: false
+      //   })
+      //   }
+      //   // add mesh
+      //   ribbon = new THREE.Mesh(ribbonCurve.geometry, ribbonCurve.material)
+      //   ribbon.position.set(0, 0, 0)
+      //   scene.add(ribbon)
 
       
     })
